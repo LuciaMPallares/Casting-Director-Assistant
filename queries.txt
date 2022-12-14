@@ -1,0 +1,40 @@
+TABLA ACTORES_ESPAÑOLES
+
+CREATE TABLE Actores_Españoles AS
+SELECT A.actores AS Actores, A."Birth Date" AS Fecha_Nacimiento, 
+G.premios AS Premios, G.generos1 AS Genero_1, 
+G.generos2 AS Genero_2, L.fotos AS Foto 
+FROM actores A JOIN actoresgenero G ON A.actores = G.actores 
+INNER JOIN links_actores L ON L.urls = G.urls 
+ 
+
+TABLA ACTRICES_ESPAÑOLES
+
+CREATE TABLE temp1actriz AS
+SELECT A.actrices AS Actrices, A.premios AS Premios, A.generos1 AS Genero_1,
+A.generos2 AS Genero_2, LA.fotos 
+FROM actricesgenero A INNER JOIN links_actrices LA
+ON A.urls = LA.urls 
+
+CREATE TABLE Actrices_Españolas AS
+SELECT T.actrices AS Actrices, AC."Birth Date" AS Fecha_Nacimiento, 
+T.premios AS Premios, T.Genero_1,
+T.Genero_2, T.fotos AS Foto
+FROM temp1actriz T INNER JOIN actrices AC
+ON T.actrices = AC.actrices; 
+
+
+TABLA DIRECTORES_ESPAÑOLES
+
+CREATE TABLE Directores_Españoles AS
+SELECT P.Directores, S.Fecha_Nacimiento, P.Premios, P.Genero_1, 
+P.Genero_2, P.Foto FROM 
+(SELECT DG.directores AS Directores, DG.premios AS Premios, DG.generos1 
+AS Genero_1, DG.generos2 AS Genero_2, LD.fotos AS Foto
+FROM directoresgenero DG INNER JOIN links_directores LD
+ON DG.directores = LD.directores) AS P
+INNER JOIN 
+(SELECT DG.directores AS Directores, D."Birth Date" AS Fecha_Nacimiento 
+FROM directores D INNER JOIN directoresgenero DG 
+ON D.directores = DG.directores) AS S
+ON P.Directores = S.Directores; 

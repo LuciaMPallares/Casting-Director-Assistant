@@ -1,0 +1,100 @@
+DIRECTORES
+
+genero(directores, directores.Genero_1, 'Comedy ', 'Comedy')
+genero(directores, directores.Genero_1, 'Drama ', 'Drama')
+genero(directores, directores.Genero_1, 'News ','News')
+genero(directores, directores.Genero_1, 'Thriller ', 'Thriller' )
+genero(directores, directores.Genero_1, 'Documentary ', 'Documentary')
+genero(directores, directores.Genero_1, 'Animation ', 'Animation')
+genero(directores, directores.Genero_1, 'Talk-Show ', 'Talk-Show')
+genero(directores, directores.Genero_1, 'Short ', 'Short')
+genero(directores, directores.Genero_1, 'Music ','Music')
+
+genero(directores, directores.Genero_2, 'Comedy ', 'Comedy')
+genero(directores, directores.Genero_2, 'Drama ', 'Drama')
+genero(directores, directores.Genero_2, 'News ', 'News')
+genero(directores, directores.Genero_2, 'Thriller ', 'Thriller')
+genero(directores, directores.Genero_2, 'Documentary ', 'Documentary')
+genero(directores, directores.Genero_2, 'Animation ', 'Animation')
+genero(directores, directores.Genero_2, 'Talk-Show ', 'Talk-Show')
+genero(directores, directores.Genero_2, 'Short ', 'Short')
+genero(directores, directores.Genero_2, 'Music ', 'Music')
+genero(directores, directores.Genero_2, 'Action ','Action')  
+genero(directores, directores.Genero_2, 'Fantasy ', 'Fantasy') 
+genero(directores, directores.Genero_2, 'Biography ', 'Biography') 
+genero(directores, directores.Genero_2, 'Family ', 'Family') 
+
+
+ACTORES
+
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Drama ', 'Drama']= actores.Genero_1.str.split('(').str[1]
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Comedy ', 'Comedy']= actores.Genero_1.str.split('(').str[1]
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Adventure ', 'Adventure']= actores.Genero_1.str.split('(').str[1]
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Romance ', 'Romance']= actores.Genero_1.str.split('(').str[-1]
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Talk-Show ', 'Talk-Show']= actores.Genero_1.str.split('(').str[1]
+actores.loc[actores.Genero_1.str.split('(').str[0]== 'Game-Show ', 'Game-Show']=actores.Genero_1.str.split('(').str[1]
+
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Drama ', 'Drama']= actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Comedy ', 'Comedy']= actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Adventure ', 'Adventure']= actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Romance ', 'Romance']= actores.Genero_2.str.split('(').str[-1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Talk-Show ', 'Talk-Show']= actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Game-Show ', 'Game-Show']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Thriller ', 'Thriller']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Animation ', 'Animation']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'News ', 'News']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Music ', 'Music']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Action ', 'Action']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Family ', 'Family']=actores.Genero_2.str.split('(').str[1]
+actores.loc[actores.Genero_2.str.split('(').str[0]== 'Reality-tv ', 'Reality-tv']=actores.Genero_2.str.split('(').str[1]
+
+actores['Drama']= actores['Drama'].str.rstrip(')')
+actores['Adventure']= actores['Adventure'].str.rstrip(')')
+actores['Romance']= actores['Romance'].str.rstrip(')')
+actores['Talk-Show']= actores['Talk-Show'].str.rstrip(')')
+actores['Game-Show']= actores['Game-Show'].str.rstrip(')')
+actores['Thriller']= actores['Thriller'].str.rstrip(')')
+actores['Animation']= actores['Animation'].str.rstrip(')')
+actores['News']= actores['News'].str.rstrip(')')
+actores['Music']= actores['Music'].str.rstrip(')')
+actores['Action']= actores['Action'].str.rstrip(')')
+actores['Family']= actores['Family'].str.rstrip(')')
+actores['Reality-tv']= actores['Reality-tv'].str.rstrip(')')
+
+
+ACTRICES
+
+genero(actrices, actrices.Genero_1, 'Comedy ', 'Comedy')
+genero(actrices, actrices.Genero_1, 'Drama ', 'Drama')
+genero(actrices, actrices.Genero_1, 'News ','News')
+genero(actrices, actrices.Genero_1, 'Thriller ', 'Thriller' )
+genero(actrices, actrices.Genero_1, 'Game-Show ', 'Game-Show')
+genero(actrices, actrices.Genero_1, 'Adventure ', 'Adventure')
+genero(actrices, actrices.Genero_1, 'Talk-Show ', 'Talk-Show')
+genero(actrices, actrices.Genero_1, 'Sci-Fi ', 'Sci-Fi')
+genero(actrices, actrices.Genero_1, 'Music ','Music')
+genero(actrices, actrices.Genero_1, 'Musical ','Musical')
+genero(actrices, actrices.Genero_1, 'Reality-Tv ','Reality-Tv')
+genero(actrices, actrices.Genero_1, 'Mystery ','Mystery')
+genero(actrices, actrices.Genero_1, 'Action ','Action')
+genero(actrices, actrices.Genero_1, 'Family ','Family')
+genero(actrices, actrices.Genero_1, 'Romance ','Romance')
+
+genero(actrices, actrices.Genero_2, 'Comedy ', 'Comedy')
+genero(actrices, actrices.Genero_2, 'Drama ', 'Drama')
+genero(actrices, actrices.Genero_2, 'News ', 'News')
+genero(actrices, actrices.Genero_2, 'Thriller ', 'Thriller')
+genero(actrices, actrices.Genero_2, 'Romance ', 'Romance')
+genero(actrices, actrices.Genero_2, 'Crime ', 'Crime')
+genero(actrices, actrices.Genero_2, 'Talk-Show ', 'Talk-Show')
+genero(actrices, actrices.Genero_2, 'Short ', 'Short')
+genero(actrices, actrices.Genero_2, 'Music ', 'Music')
+genero(actrices, actrices.Genero_2, 'Game-Show ','Game-Show')  
+genero(actrices, actrices.Genero_2, 'Adventure ', 'Adventure') 
+genero(actrices, actrices.Genero_2, 'Biography ', 'Biography') 
+genero(actrices, actrices.Genero_2, 'Family ', 'Family')
+genero(actrices, actrices.Genero_2, 'Reality-Tv ', 'Reality-Tv')
+genero(actrices, actrices.Genero_2, 'Horror ', 'Horror')
+genero(actrices, actrices.Genero_2, 'Musical ', 'Musical')
+genero(actrices, actrices.Genero_2, 'Adult ', 'Adult')
+genero(actrices, actrices.Genero_2, 'Sport ', 'Sport')
