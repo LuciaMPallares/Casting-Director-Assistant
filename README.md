@@ -6,11 +6,11 @@ The goal of this project is to facilitate the work of casting directors in the s
 
 Genres included: drama, comedy, romance, thriller, fantasy, horror, family, adventure, action, short films, musical and documentary.
 
-When selecting a professional for a specific genre, either by age range, number of appearances in that genre, awards, nominations or photo, all the information of the rest of the variables mentioned above will be displayed.
+When selecting a professional for a specific genre, either by age range, number of appearances in that genre, awards, nominations or photo, all the information of the rest of the variables mentioned above will be displayed. It is a interactive dashboard.
 
 A list of film directors is also included, with the number of productions directed by genre and number of awards and nominations obtained during their career.
 
-**What we have done:**
+**What I have done:**
 
 - The data have been obtained from the IMBD website by two different extraction techniques: downloading 3 csv and obtaining 6 csv through Web Scraping, specifically using the Selenium tool.
 
@@ -62,7 +62,7 @@ Al seleccionar un profesional por un género determinado, tanto por el rango de 
 
 También se incluye un listado de directores de cine, con el número de producciones dirigidas por género y número de premios y nominaciones obtenidos durante su carrera.
 
-**What we have done:**
+**Pasos realizados:**
 
 - Los datos han sido obtenidos de la web IMBD por dos técnicas de extracción diferente: descarga de 3 csv y obtención de 6 csv a través de Web Scraping, en concreto usando la herramienta Selenium.
 - Creación con SQL de 3 únicas tablas a partir de los 9 csv obtenidos en el anterior paso con la información que necesitamos.
@@ -72,7 +72,7 @@ También se incluye un listado de directores de cine, con el número de producci
 
 -
 
-**Submission:**
+**Archivos:**
 
 - Asistente Director de Casting.pbix
 - Datacleaning.ipynb
