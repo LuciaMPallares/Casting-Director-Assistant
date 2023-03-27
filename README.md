@@ -81,7 +81,6 @@ También se incluye un listado de directores de cine, con el número de producci
 - actrices\_scraping.ipynb
 - directores\_scraping.ipynb
 - functions\_finalproyect.py
-- WorldCupMatches.csv
 - CSV\_from\_WebScraping.rar
 - CSV\_from\_sql.rar
 - CSV\_from\_datacleaning.rar
