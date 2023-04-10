@@ -2,13 +2,13 @@
 
 # **Casting Assistant Director**
 
-The goal of this project is to facilitate the work of casting directors in the selection process of actors and actresses. To this end, several variables have been introduced to filter the list of professionals: age range to which they belong, number of awards and nominations received during their career and total number of appearances in productions according to artistic categories.
+The goal of this project is to facilitate the work of casting directors in the selection process of actors and actresses. To this end, several variables have been introduced to filter the list of professionals: age range, number of awards and nominations received during their career and total number of appearances in productions according to artistic categories.
 
-Genres included: drama, comedy, romance, thriller, fantasy, horror, family, adventure, action, short films, musical and documentary.
+Categories included: drama, comedy, romance, thriller, fantasy, horror, family, adventure, action, short films, musical and documentary.
 
-When selecting a professional for a specific genre, either by age range, number of appearances in that genre, awards, nominations or photo, all the information of the rest of the variables mentioned above will be displayed. It is a interactive dashboard.
+When selecting a professional for a specific categories, either by age range, number of appearances in that categories, awards, nominations or photo, all the information of the rest of the variables mentioned above will be displayed. It is a interactive dashboard.
 
-A list of film directors is also included, with the number of productions directed by genre and number of awards and nominations obtained during their career.
+A list of film directors is also included, with the number of productions directed by categories and number of awards and nominations obtained during their career.
 
 **What I have done:**
 
